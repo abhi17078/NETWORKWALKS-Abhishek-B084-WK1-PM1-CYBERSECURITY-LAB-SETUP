@@ -135,7 +135,8 @@ A dedicated NAT Network was created using VirtualBox Network Manager.
 
 A NAT Network was selected because it allows multiple virtual machines connected to the same network to communicate with each other while providing outbound network connectivity.
 
-**Evidence:** <img width="1832" height="1005" alt="Screenshot 2026-11-14 111621" src="https://github.com/user-attachments/assets/b7664910-2dbc-43d1-8714-ad4e7009b792" />
+**Evidence:** <img width="1872" height="888" alt="Screenshot 2026-11-14 152805" src="https://github.com/user-attachments/assets/f87cc685-4069-4fc5-9def-a44ceab8581f" />
+
 
 
 ### Step 4: Configuring Kali Linux Network Adapter
@@ -154,7 +155,8 @@ The Kali Linux virtual machine's network adapter was configured to connect to th
 
 This configuration establishes the virtual network connection between Kali Linux and the VirtualBox NAT Network.
 
-**Evidence:** <img width="1582" height="866" alt="Screenshot 2026-11-14 111540" src="https://github.com/user-attachments/assets/fe93b29c-6c04-4628-bc0e-41c6c9f1eeba" />
+**Evidence:** <img width="1052" height="682" alt="Screenshot 2026-11-14 152923" src="https://github.com/user-attachments/assets/54f87acc-1770-4097-bbe5-40eca0cf4e55" />
+
 
 
 ### Step 5: Kali Linux Network Configuration and Inspection
@@ -186,7 +188,9 @@ These commands were used to inspect:
 | Default Gateway | 10.0.0.1 |
 | DNS Server | 8.8.8.8|
 
-**Evidence:**<img width="1920" height="922" alt="Screenshot_2026-11-14_14_16_34" src="https://github.com/user-attachments/assets/082e2ab5-b729-4ada-b13d-ba11ef6741ac" />
+**Evidence:** <img width="1920" height="922" alt="Screenshot_2026-11-14_15_32_59" src="https://github.com/user-attachments/assets/263a2314-0052-467f-ad32-9c51ff475684" />
+
+
 
 
 
@@ -245,10 +249,8 @@ Purpose: Verify that domain names can be resolved through DNS.
 
 **Result:** All reported connectivity tests completed successfully.
 
-**Evidence:** <img width="1920" height="922" alt="Screenshot_2026-11-14_11_35_47" src="https://github.com/user-attachments/assets/e3c1b126-7ae1-4c08-9d49-c62607e375bb" />
-<img width="1920" height="922" alt="Screenshot_2026-11-14_13_27_21" src="https://github.com/user-attachments/assets/1b1d3799-3305-476c-9862-4aa66ffe530b" />
-<img width="1920" height="922" alt="Screenshot_2026-11-14_13_24_20" src="https://github.com/user-attachments/assets/212b19d9-134f-4c7c-a615-99710035ef38" />
-
+**Evidence:** <img width="1920" height="922" alt="Screenshot_2026-11-14_15_26_02" src="https://github.com/user-attachments/assets/942d4427-04b8-4a62-8fb3-a020a4c36840" />
+<img width="1920" height="922" alt="Screenshot_2026-11-14_15_26_14" src="https://github.com/user-attachments/assets/2b70aeff-6d17-4dc8-b443-dcd13480568c" />
 
 
 ### Step 7: VirtualBox Shared Folder Configuration
@@ -266,7 +268,8 @@ A shared folder was configured to enable file exchange between the host operatin
 
 The shared-folder feature provides a convenient way to transfer scripts, configuration files, and other lab resources between the host and guest operating systems.
 
-**Evidence:** <img width="1530" height="901" alt="08-shared-folder-configuration" src="https://github.com/user-attachments/assets/9e810be8-ab9f-4f68-a82e-074596da39fe" />
+**Evidence:** <img width="1530" height="901" alt="08-shared-folder-configuration" src="https://github.com/user-attachments/assets/1e92dae1-5c1d-4a2e-ac55-9683452ad7b6" />
+
 
 
 ### Step 8: Creating a Virtual Machine Snapshot
@@ -282,7 +285,8 @@ A virtual machine snapshot was created after completing the initial lab configur
 - Allows experimentation without losing the baseline configuration.
 - Supports safer testing and troubleshooting.
 
-**Evidence:** <img width="1902" height="965" alt="Screenshot 2026-11-14 133201" src="https://github.com/user-attachments/assets/0242a4d1-4957-4e80-ae45-c11a1d072dc4" />
+**Evidence:**<img width="1917" height="441" alt="Screenshot 2026-11-14 153541" src="https://github.com/user-attachments/assets/b615b393-048f-4cad-86e2-11614e3f1683" />
+
 
 
 ## 🔎 Lab Verification
