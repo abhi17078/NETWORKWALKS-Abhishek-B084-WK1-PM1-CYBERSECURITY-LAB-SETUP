@@ -1,41 +1,47 @@
-Cybersecurity Internship — Week 01
+# NETWORKWALKS-Komal-B084-WK1-PM1-CYBERSECURITY-LAB-SETUP
 
-📌 Project Overview
+
+**Cybersecurity Internship — Week 01**
+
+## 📌 Project Overview
+
 This repository documents the setup and configuration of a virtual cybersecurity and penetration-testing laboratory using Oracle VirtualBox and Kali Linux 2026.2.
 
 The primary objective was to establish a controlled virtual environment for cybersecurity learning, network inspection, reconnaissance, vulnerability assessment, and authorized security-testing activities.
 
 The laboratory uses a dedicated VirtualBox NAT Network to provide network connectivity and enable communication between multiple virtual machines connected to the same virtual network.
 
-🎯 Objectives
+## 🎯 Objectives
 
 The main objectives of this project were:
-Install and configure Oracle VirtualBox.
-Import and configure Kali Linux 2026.2 as a virtual machine.
-Create and configure a dedicated VirtualBox NAT Network.
-Configure the Kali Linux network adapter.
-Verify IPv4 addressing and network configuration.
-Inspect network interfaces and routing information.
-Perform network connectivity and DNS resolution tests.
-Configure shared folders between Windows and Kali Linux.
-Create a virtual machine snapshot for recovery.
-Document the complete lab setup and verification process.
 
-🛡️ Purpose of the Lab
+- Install and configure Oracle VirtualBox.
+- Import and configure Kali Linux 2026.2 as a virtual machine.
+- Create and configure a dedicated VirtualBox NAT Network.
+- Configure the Kali Linux network adapter.
+- Verify IPv4 addressing and network configuration.
+- Inspect network interfaces and routing information.
+- Perform network connectivity and DNS resolution tests.
+- Configure shared folders between Windows and Kali Linux.
+- Create a virtual machine snapshot for recovery.
+- Document the complete lab setup and verification process.
+
+## 🛡️ Purpose of the Lab
 
 The laboratory provides a controlled environment for learning and practicing cybersecurity concepts.
 
 It can be used for:
 
-Network reconnaissance
-Port scanning
-Vulnerability assessment
-Network traffic analysis
-Web application security testing
-Penetration-testing practice
-Security-tool experimentation
+- Network reconnaissance
+- Port scanning
+- Vulnerability assessment
+- Network traffic analysis
+- Web application security testing
+- Penetration-testing practice
+- Security-tool experimentation 
 
-🏗️ Lab Architecture
+
+## 🏗️ Lab Architecture
 
 The laboratory consists of a host operating system running Oracle VirtualBox, with Kali Linux operating as a guest virtual machine.
 
@@ -43,235 +49,305 @@ The Kali Linux VM is connected to a dedicated NAT Network configured through Vir
 
 Network Topology
 
-      Windows 11 Host
-             |
-      Oracle VirtualBox
-             |
-    VirtualBox NAT Network
-             |
-        10.0.0.0/24
-             |
-       Kali Linux VM
-             |
-         10.0.0.2
-             |
-    Gateway: 10.0.0.1
-             |
-      External Network
+          Windows 11 Host
+                 |
+          Oracle VirtualBox
+                 |
+        VirtualBox NAT Network
+                 |
+            10.0.0.0/24
+                 |
+           Kali Linux VM
+                 |
+             10.0.0.2
+                 |
+        Gateway: 10.0.0.1
+                 |
+          External Network
+
 The NAT Network allows multiple connected virtual machines to communicate with one another while providing outbound network connectivity through network address translation.
 
 Additional virtual machines can be connected to the same NAT Network in future lab exercises.
 
-⚙️ Lab Configuration
+## ⚙️ Lab Configuration
 
-Component	Configuration
-Host Operating System	Windows 11
-Host RAM	16 GB
-Processor	AMD Ryzen 5 5600H with Radeon Graphics (3.30 GHz)
-Hypervisor	Oracle VirtualBox 7.2
-Guest Operating System	Kali Linux 2026.2
-Allocated VM RAM	4096 MB
-Network Mode	NAT Network
-NAT Network Name	NatNetwork
-IPv4 Network Prefix	10.0.0.0/24
-DHCP	Enabled
-Kali Linux IP	10.0.0.2
-Default Gateway	10.0.0.1
-DNS Server	8.8.8.8
-Shared Folder	Configured
-VM Snapshot	Created
+| Component | Configuration |
+|---|---|
+| Host Operating System | Windows 11 |
+| Host RAM |16 GB |
+| Processor | AMD Ryzen 5 5600H with Radeon Graphics (3.30 GHz)|
+| Hypervisor | Oracle VirtualBox 7.2 |
+| Guest Operating System | Kali Linux 2026.2 |
+| Allocated VM RAM | 4096 MB |
+| Network Mode | NAT Network |
+| NAT Network Name | NatNetwork |
+| IPv4 Network Prefix | 10.0.0.0/24 |
+| DHCP | Enabled |
+| Kali Linux IP | 10.0.0.2 |
+| Default Gateway |10.0.0.1 |
+| DNS Server |8.8.8.8 |
+| Shared Folder | Configured |
+| VM Snapshot | Created |
 
-🪜 Lab Setup Procedure
+## 🪜 Lab Setup Procedure
 
-Step 1: Installing Oracle VirtualBox
+### Step 1: Installing Oracle VirtualBox
+
 Oracle VirtualBox was installed on the host machine to create and manage virtual machines.
 
-Activities performed:
-evidence <img width="1252" height="557" alt="Screenshot 2026-11-14 111055" src="https://github.com/user-attachments/assets/9a9d8c6c-beae-4efa-aa99-1e649e0e4e34" />
+**Activities performed:**
 
-Step 2: Importing Kali Linux Virtual Machine
+- Installed Oracle VirtualBox.
+- Reviewed the virtual machine management interface.
+- Prepared the environment for importing Kali Linux.
+
+**Evidence:** <img width="1252" height="557" alt="Screenshot 2026-11-14 111055" src="https://github.com/user-attachments/assets/bf17d4fe-5b2e-4039-9e08-a0be6633a56e" />
+
+
+### Step 2: Importing Kali Linux Virtual Machine
+
 Kali Linux 2026.2 was imported into Oracle VirtualBox as a guest virtual machine.
 
 The virtual machine configuration was reviewed, including memory allocation, processor resources, storage, and network adapter settings.
 
-Operating System: Kali Linux 2026.2
+**Operating System:** Kali Linux 2026.2
 
-Activities performed:
+**Activities performed:**
 
-Imported the Kali Linux virtual machine.
-Reviewed the virtual machine settings.
-Started Kali Linux and verified successful booting.
-Evidence 
-<img width="1920" height="922" alt="Screenshot_2026-11-14_13_15_10" src="https://github.com/user-attachments/assets/2ca175b7-4aa4-4ce2-a15a-b287d9436f13" />
-Step 3: Creating a VirtualBox NAT Network
+- Imported the Kali Linux virtual machine.
+- Reviewed the virtual machine settings.
+- Started Kali Linux and verified successful booting.
+
+**Evidence:** <img width="1920" height="922" alt="Screenshot_2026-11-14_13_15_10" src="https://github.com/user-attachments/assets/fd71f1ac-d4ee-4a98-afd1-6bbe5323b0ce" />
+
+### Step 3: Creating a VirtualBox NAT Network
+
 A dedicated NAT Network was created using VirtualBox Network Manager.
 
-Network Configuration:
+**Network Configuration:**
 
-Setting	Configuration
-Network Name	NatNetwork
-IPv4 Prefix	10.0.0.0/24
-DHCP	Enabled
-IPv6	Disabled
+| Setting | Configuration |
+|---|---|
+| Network Name | NatNetwork |
+| IPv4 Prefix | 10.0.0.0/24 |
+| DHCP | Enabled |
+| IPv6 |Disabled |
+
 A NAT Network was selected because it allows multiple virtual machines connected to the same network to communicate with each other while providing outbound network connectivity.
-Evidence :
-<img width="1832" height="1005" alt="Screenshot 2026-11-14 111621" src="https://github.com/user-attachments/assets/89b832aa-0b2b-45bc-a826-f63c01929fac" />
-Step 4: Configuring Kali Linux Network Adapter
+
+**Evidence:** <img width="1832" height="1005" alt="Screenshot 2026-11-14 111621" src="https://github.com/user-attachments/assets/b7664910-2dbc-43d1-8714-ad4e7009b792" />
+
+
+### Step 4: Configuring Kali Linux Network Adapter
+
 The Kali Linux virtual machine's network adapter was configured to connect to the newly created NAT Network.
 
-Adapter Configuration:
+**Adapter Configuration:**
 
-Setting	Configuration
-Adapter	Adapter 1
-Attached To	NAT Network
-Network	NatNetwork
-Adapter Type	Intel PRO/1000 MT Desktop (82540EM)
-Cable Connected	Enabled
+| Setting | Configuration |
+|---|---|
+| Adapter | Adapter 1 |
+| Attached To | NAT Network |
+| Network | NatNetwork |
+| Adapter Type | Intel PRO/1000 MT Desktop (82540EM) |
+| Cable Connected | Enabled |
+
 This configuration establishes the virtual network connection between Kali Linux and the VirtualBox NAT Network.
 
-Evidence:
-<img width="1582" height="866" alt="Screenshot 2026-11-14 111540" src="https://github.com/user-attachments/assets/17dc802a-594c-4d8a-af92-074b2c376fda" />
-Step 5: Kali Linux Network Configuration and Inspection
+**Evidence:** <img width="1582" height="866" alt="Screenshot 2026-11-14 111540" src="https://github.com/user-attachments/assets/fe93b29c-6c04-4628-bc0e-41c6c9f1eeba" />
+
+
+### Step 5: Kali Linux Network Configuration and Inspection
+
 After starting Kali Linux, the network interface configuration was inspected using Linux networking commands.
 
-Commands used:
+**Commands used:**
 
+```bash
 ip addr show
 ip link show
 ip route
+```
+
 These commands were used to inspect:
 
-Available network interfaces.
-Assigned IPv4 addresses.
-Network interface operational status.
-Default gateway and routing information.
-Observed Network Configuration:
+- Available network interfaces.
+- Assigned IPv4 addresses.
+- Network interface operational status.
+- Default gateway and routing information.
 
-Parameter	Value
-IPv4 Address	10.0.0.2
-Network Prefix	10.0.0.0/24
-Subnet Mask	255.255.255.0
-Default Gateway	10.0.0.1
-DNS Server	8.8.8.8
-Evidence:
-<img width="1920" height="922" alt="Screenshot_2026-11-14_11_14_08" src="https://github.com/user-attachments/assets/f64271f5-858a-485c-bf90-e1e261cf61af" />
-Step 6: Network Connectivity Testing
+**Observed Network Configuration:**
+
+| Parameter | Value |
+|---|---|
+| IPv4 Address | 10.0.0.2 |
+| Network Prefix | 10.0.0.0/24 |
+| Subnet Mask | 255.255.255.0 |
+| Default Gateway | 10.0.0.1 |
+| DNS Server | 8.8.8.8|
+
+**Evidence:** <img width="1920" height="922" alt="Screenshot_2026-11-14_11_14_08" src="https://github.com/user-attachments/assets/2d14987a-ebba-4564-ac0a-a2317609505d" />
+
+
+### Step 6: Network Connectivity Testing
+
 Network connectivity was tested using standard Linux networking utilities.
 
-1. Network Interface Inspection
+**1. Network Interface Inspection**
 
+```bash
 ip addr show
+```
+
 Purpose: Inspect network interfaces and verify the assigned IP address.
 
-2. Routing Table Inspection
+**2. Routing Table Inspection**
 
+```bash
 ip route
+```
+
 Purpose: Identify the default gateway and routing configuration.
 
-3. Gateway Connectivity Test
+**3. Gateway Connectivity Test**
 
+```bash
 ping -c 4 10.0.0.1
+```
+
 Purpose: Verify communication with the virtual network gateway.
 
-4. External Network Connectivity Test
+**4. External Network Connectivity Test**
 
+```bash
 ping -c 4 8.8.8.8
+```
+
 Purpose: Check outbound connectivity to an external IP address.
 
-5. DNS Resolution Test
+**5. DNS Resolution Test**
 
+```bash
 getent hosts google.com
+```
+
 Purpose: Verify that domain names can be resolved through DNS.
 
-Verification Summary:
+**Verification Summary:**
 
-Test	Command	Status
-IP Address Inspection	ip addr show	Successful
-Gateway Connectivity	ping -c 4 10.0.0.1	Successful
-External IP Connectivity	ping -c 4 8.8.8.8	Successful
-DNS Resolution	getent hosts google.com	Successful
-Result: All reported connectivity tests completed successfully.
+| Test | Command | Status |
+|---|---|---|
+| IP Address Inspection | `ip addr show` | Successful |
+| Gateway Connectivity | `ping -c 4 10.0.0.1` | Successful |
+| External IP Connectivity | `ping -c 4 8.8.8.8` | Successful |
+| DNS Resolution | `getent hosts google.com` | Successful |
 
-Evidence:
+**Result:** All reported connectivity tests completed successfully.
 
-<img width="1920" height="922" alt="Screenshot_2026-11-14_11_35_47" src="https://github.com/user-attachments/assets/66363e15-28a7-486b-95b0-aa4978c9c0d5" />
-<img width="1920" height="922" alt="Screenshot_2026-11-14_13_27_21" src="https://github.com/user-attachments/assets/8ae38556-ea88-4b19-b3d3-6104b828f296" />
+**Evidence:** <img width="1920" height="922" alt="Screenshot_2026-11-14_11_35_47" src="https://github.com/user-attachments/assets/e3c1b126-7ae1-4c08-9d49-c62607e375bb" />
+<img width="1920" height="922" alt="Screenshot_2026-11-14_13_27_21" src="https://github.com/user-attachments/assets/1b1d3799-3305-476c-9862-4aa66ffe530b" />
+<img width="1920" height="922" alt="Screenshot_2026-11-14_13_24_20" src="https://github.com/user-attachments/assets/212b19d9-134f-4c7c-a615-99710035ef38" />
 
-Step 7: VirtualBox Shared Folder Configuration
+
+
+### Step 7: VirtualBox Shared Folder Configuration
+
 A shared folder was configured to enable file exchange between the host operating system and Kali Linux.
 
-Activities performed:
+**Activities performed:**
 
-Created a dedicated folder on the host machine.
-Added the folder through VirtualBox Shared Folders settings.
-Configured the shared-folder options.
-Enabled persistent configuration using Make Permanent.
-Auto Mount - Enabled.
-Checked the shared-folder access from Kali Linux.
+- Created a dedicated folder on the host machine.
+- Added the folder through VirtualBox Shared Folders settings.
+- Configured the shared-folder options.
+- Enabled persistent configuration using Make Permanent.
+- Auto Mount - Enabled.
+- Checked the shared-folder access from Kali Linux.
+
 The shared-folder feature provides a convenient way to transfer scripts, configuration files, and other lab resources between the host and guest operating systems.
-Evedence:
-<img width="1530" height="901" alt="08-shared-folder-configuration" src="https://github.com/user-attachments/assets/62984947-94ce-44b6-b8a3-2e3acdc0013f" />
 
-Step 8: Creating a Virtual Machine Snapshot
+**Evidence:** <img width="1530" height="901" alt="08-shared-folder-configuration" src="https://github.com/user-attachments/assets/9e810be8-ab9f-4f68-a82e-074596da39fe" />
+
+
+### Step 8: Creating a Virtual Machine Snapshot
+
 A virtual machine snapshot was created after completing the initial lab configuration.
 
-Snapshot Status: Created After Configuration
+**Snapshot Status:** Created *After Configuration*
 
-Purpose:
+**Purpose:**
 
-Provides a recovery point.
-Helps restore the initial lab environment.
-Allows experimentation without losing the baseline configuration.
-Supports safer testing and troubleshooting.
-Evedence <img width="1902" height="965" alt="Screenshot 2026-11-14 133201" src="https://github.com/user-attachments/assets/0ba1e085-3123-4d90-a265-d4a397c07465" />
-🔎 Lab Verification
+- Provides a recovery point.
+- Helps restore the initial lab environment.
+- Allows experimentation without losing the baseline configuration.
+- Supports safer testing and troubleshooting.
+
+**Evidence:** <img width="1902" height="965" alt="Screenshot 2026-11-14 133201" src="https://github.com/user-attachments/assets/0242a4d1-4957-4e80-ae45-c11a1d072dc4" />
+
+
+## 🔎 Lab Verification
+
 The following checks were performed to verify the laboratory environment:
 
-Kali Linux booted successfully.
-Virtual network adapter was connected to NatNetwork.
-Kali Linux received or was configured with IP address 10.0.0.2.
-Network interface and routing information were inspected.
-Gateway connectivity was tested.
-External IP connectivity was tested.
-DNS resolution was tested.
-Shared-folder configuration was completed.
-A virtual machine snapshot was created.
-Overall Result: The initial virtual cybersecurity lab setup and reported network connectivity tests were completed successfully.
+- Kali Linux booted successfully.
+- Virtual network adapter was connected to NatNetwork.
+- Kali Linux received or was configured with IP address 10.0.0.2.
+- Network interface and routing information were inspected.
+- Gateway connectivity was tested.
+- External IP connectivity was tested.
+- DNS resolution was tested.
+- Shared-folder configuration was completed.
+- A virtual machine snapshot was created.
 
-💡 What I Learned
+**Overall Result:** The initial virtual cybersecurity lab setup and reported network connectivity tests were completed successfully.
+
+
+## 💡 What I Learned
+
 Through this project, I gained practical experience with virtualization and Linux networking.
 
-1. Virtualization
+### 1. Virtualization
+
 Learned how to import, configure, and manage virtual machines using Oracle VirtualBox.
 
-2. NAT and NAT Network
+### 2. NAT and NAT Network
+
 Understood the difference between standard NAT and NAT Network and how virtual machines communicate through virtual networking.
 
-3. Linux Network Inspection
-Practiced using commands such as ip addr, ip link, and ip route to inspect network interfaces and routing information.
+### 3. Linux Network Inspection
 
-4. IP Addressing and Networking
+Practiced using commands such as `ip addr`, `ip link`, and `ip route` to inspect network interfaces and routing information.
+
+### 4. IP Addressing and Networking
+
 Developed an understanding of IPv4 addresses, subnet masks, gateways, and DNS configuration.
 
-5. Network Troubleshooting
+### 5. Network Troubleshooting
+
 Learned how to diagnose network connectivity issues through gateway testing, external IP connectivity checks, and DNS resolution.
 
-6. Shared Folder Configuration
+### 6. Shared Folder Configuration
+
 Learned how to establish file sharing between a host operating system and a guest virtual machine and understand the importance of Linux permissions.
 
-7. Virtual Machine Snapshots
+### 7. Virtual Machine Snapshots
+
 Understood the importance of creating recovery points before conducting experimental or potentially disruptive security activities.
 
-8. Technical Documentation
+### 8. Technical Documentation
+
 Gained experience documenting configuration procedures, terminal commands, screenshots, troubleshooting observations, and verification results.
 
-🔐 Security Disclaimer
+
+## 🔐 Security Disclaimer
+
 This virtual laboratory is intended for educational purposes and authorized cybersecurity testing.
 
 All scanning, vulnerability assessment, and penetration-testing activities must be performed only within controlled lab environments or on systems for which explicit authorization has been obtained.
 
-Made by : Abhishek LinkedIn : www.linkedin.com/in/abhishek-yadav-4655b0352 Project: Kali Linux Virtual Cybersecurity Lab Setup Focus Areas: Virtualization | Kali Linux | Linux Networking | NAT Networking | Shared Folders | Connectivity Testing
+---
 
-Installed Oracle VirtualBox.
-Reviewed the virtual machine management interface.
-Prepared the environment for importing Kali Linux.
+Made by :
+Abhishek
+LinkedIn : www.linkedin.com/in/abhishek-yadav-4655b0352/
+**Project:** Kali Linux Virtual Cybersecurity Lab Setup
+**Focus Areas:** Virtualization | Kali Linux | Linux Networking | NAT Networking | Shared Folders | Connectivity Testing
