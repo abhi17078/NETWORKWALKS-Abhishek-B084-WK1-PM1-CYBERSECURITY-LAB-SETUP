@@ -186,7 +186,8 @@ These commands were used to inspect:
 | Default Gateway | 10.0.0.1 |
 | DNS Server | 8.8.8.8|
 
-**Evidence:** <img width="1920" height="922" alt="Screenshot_2026-11-14_11_14_08" src="https://github.com/user-attachments/assets/2d14987a-ebba-4564-ac0a-a2317609505d" />
+**Evidence:**<img width="1920" height="922" alt="Screenshot_2026-11-14_14_16_34" src="https://github.com/user-attachments/assets/082e2ab5-b729-4ada-b13d-ba11ef6741ac" />
+
 
 
 ### Step 6: Network Connectivity Testing
