@@ -1,4 +1,3 @@
-<img width="1920" height="922" alt="Screenshot_2026-11-14_13_24_20" src="https://github.com/user-attachments/assets/81f72eed-79ee-4135-9b91-5a0f631f2cc7" /># NETWORKWALKS-Abhishek-B084-WK1-PM1-CYBERSECURITY-LAB-SETUP
 Cybersecurity Internship — Week 01
 
 📌 Project Overview
