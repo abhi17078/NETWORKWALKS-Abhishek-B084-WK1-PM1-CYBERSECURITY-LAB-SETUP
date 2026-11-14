@@ -348,6 +348,6 @@ All scanning, vulnerability assessment, and penetration-testing activities must 
 
 Made by :
 Abhishek
-LinkedIn : www.linkedin.com/in/abhishek-yadav-4655b0352/
+LinkedIn : www.linkedin.com/in/abhishek-yadav-4655b0352
 **Project:** Kali Linux Virtual Cybersecurity Lab Setup
 **Focus Areas:** Virtualization | Kali Linux | Linux Networking | NAT Networking | Shared Folders | Connectivity Testing
